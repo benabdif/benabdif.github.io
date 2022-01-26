@@ -396,6 +396,12 @@ section {
     .section{
         padding: 80px 20px;
     }
+    
+     .imyig {
+        width: 100%;
+        left: 110%;
+        position: absolute;
+    }
 
 
     .main-content h2{
