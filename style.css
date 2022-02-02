@@ -431,9 +431,7 @@ section {
 
 @media (max-width:641px){
     body{
-        font-size: 12px;
-        color:rgb(77, 226, 7)
-        
+        font-size: 12px;   
     }
 
     .main-content h2{
