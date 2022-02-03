@@ -261,9 +261,6 @@ section {
 
 
 
-
-
-
 .card .icon {
     color: #04c2a2;
     font-size: 4em;
@@ -382,8 +379,13 @@ section {
         padding: 12px 20px;
         
     }
+    
+    .fadhel {
+            margin: 0;
+        }
+        
 
-    .navigation a{
+.navigation a{
         padding-left: 10px;
         
     }
@@ -422,10 +424,7 @@ section {
 
     .RUS { 
         font-size: 1.6em;
-        
-        
-
-        
+           
 
     }
 
@@ -436,6 +435,9 @@ section {
     body{
         font-size: 12px;   
     }
+    .fadhel {
+            margin: 0;
+        }
 
     .main-content h2{
         font-size: 0.8em;
@@ -487,7 +489,12 @@ section {
         padding: 10px 15px;
         
     }
+    .fadhel {
+            margin: 0;
+        }
 
+    
+    
     .navigation a{
         padding-left: 8px;
         
