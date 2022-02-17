@@ -446,6 +446,10 @@ section {
     .main-content h2{
         font-size: 0.8em;
     }
+    /*Fadhel*/
+    .main h2 span {
+        font-size: 23px;
+    }
 
     .main-content h3{
         font-size: 1.4em;
