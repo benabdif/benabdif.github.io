@@ -450,13 +450,14 @@ section {
     .main h2 span {
         font-size: 23px;
     }
-
+/*
     .main-content h3{
         font-size: 1.4em;
-    }
+    }*/
     /*Fadhel*/
     .main h3 {
         font-siz: 15px;
+        color: #3a6cf4;
     }
     /*Fadhel*/
     .img myig {
