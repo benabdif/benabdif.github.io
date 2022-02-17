@@ -403,7 +403,7 @@ section {
         padding: 80px 20px;
     }
     
-     .imyig {
+    .imyig {
         width: 100%;
         left: 110%;
         position: absolute;
@@ -471,6 +471,7 @@ section {
     }
     .mytitle{
         font-size: 0.8em;
+        color: blue;
         
     }
 
