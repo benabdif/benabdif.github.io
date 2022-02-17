@@ -450,19 +450,21 @@ section {
     .main h2 span {
         font-size: 23px;
     }
-/*
-    .main-content h3{
-        font-size: 1.4em;
-    }*/
+    
     /*Fadhel*/
     .main h3 {
         font-size: 15px;
         
     }
     /*Fadhel*/
-    .img myig {
-        width: 90%;
-    }
+    
+    
+    .myig {
+    width: 50%;
+    position:absolute;
+    right: 0px;
+    
+}
     
     .title{
         font-size: 0.8em;
