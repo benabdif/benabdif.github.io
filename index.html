@@ -1,702 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGq2lFXR5P1zz5QvPrIJSxYv9RNNUBRsByVl5D3eNE9emG0RnGCDJgWBbIbQHpG6" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="mycss.css">
+    <script src="home.js"></script>
 
-    <title>Fadhel Ben Abdi</title>
+  </head>
+
+  <body>
+    <header style="background-color: rgba(0, 0, 0, 0.179);">
+        <i class="fas fa-brain fa-2x mb-3"></i>
+
+      <p style="color: rgb(5, 10, 15);"></p> 
+      <nav>
+        <ul class="nav_links" style="font-size: 30px;">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="index2.html">CV</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="https://www.linkedin.com/in/fadilfbenabdi"><button>Contact</button></a>
+    </header>
+    <!-- part 2 -->
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6 py-5">
+              <div class="main">
+                  <div class="fadhel py-5">
+                      <!-- <h2 class="display-4">Hello, I am Fadhel<br><span>Software Developer</span></h2> -->
+                      <h2 class="display-4 mb-4">Hello, I am Fadhel<br><span class="" style="font-size: 2.8em; font-weight: 200;">Software Developer</span></h2>
+
+                      <h3>Information System</h3>
+                      <a href="index2.html" class="main-btn" style="font-size: 1em;">View my Resume</a>
+                      <!-- icon -->
+                      <div class="social-icons">
+                          <a href="https://www.linkedin.com/in/fadilfbenabdi"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://www.twitter.com/fadilf00100"><i class="fab fa-twitter"></i></a>
+                          <a href="https://github.com/benabdif"><i class="fab fa-github-square"></i></a>
+                          <a href="https://medium.com/@fadilf00100"><i class="fab fa-medium"></i></a>
+                      </div> 
+                  </div>
+              </div>
+              
+          </div>
+          <!-- image -->
+          <div class="col-lg-6 text-center py-5">
+              <img class="logo img-fluid float-right" src="images/fadhel_2.png" alt="Logo" style="height: 450px; width: 500px;">
+          </div>
+      </div>
+    </div>
+
+  <div class="container-fluid" style="background-color: aquamarine; padding: 50px 0;">
+    <div class="container">
+        <h1 class="display-4 text-center" style="font-size: 2.8em;">Discover Me</h1>
+        <p class="lead">
+            "Hello, I'm Fadhel Ben Abdi, an Information Systems major with a Bachelor's degree from Oregon State University, where I graduated with honors and a GPA of 3.51. As an Information Systems major and Data Scientist, my career objective is to leverage my comprehensive understanding of technology and data management to contribute effectively to a dynamic and innovative work environment. I aim to be the communications link between customers and the Solutions Team, developing and maintaining personal relationships with the technical customer base in a designated area. I am extremely passionate about working in a teamwork-oriented environment to achieve business objectives.
+        </p>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="padding: 50px 0;">
+    <style>
+        
+        /* Custom styles for coordination */
+
+        .card {
+            height: 100%;
+            transition: background-color 0.1s;
+        }
+
+        .card:hover {
+            /* background-color: #f8f9fa; Change this color to your desired hover effect */
+            background-color: #d8dbdd; /* Change this color to your desired hover effect */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-text {
+            flex-grow: 1;
+        }
+        /* hover on more  */
+
+        
+        /* .toggle-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #3498db;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+} */
+/* 
+.toggle-button:hover {
+    color: #fff;
+    background-color: #2980b9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+} */
+
+/* Optional: If you want to include the cursor pointer on non-hover state */
+/* .toggle-button {
+    cursor: pointer;
+} */
+
+
+.toggle-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for the button */
+    border-radius: 10px; /* Adjust border-radius for rounded corners */
+    border: 1px solid #3498db; /* Border color */
+    text-decoration: none;
+    color: #3498db; /* Text color */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Adding transition effects */
+}
+
+.toggle-button:hover {
+    background-color: #2980b9; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    border-color: #2980b9; /* Border color on hover */
+}
+
+       
+
+    </style>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">3.51</a>
-        <nav class="navigation">
-            <a href="#My_Rusme">Resume one</a>
-            <a href="#services">Experices In</a>
-            <a href="#Conect">Connect</a>
-            
-        </nav>
-    </header>
-    
 
-    <section class="main">
-        <div>
-            <img class="myig" src="images/fadhel_2.png" alt="myeye">
-            <div class="fadhel">
-                <h2>Hello, I am Fadhel<br><span>Software Devoloper</span></h2>
+    <div class="container">
+        <h1 class="display-4 text-center" style="font-size: 2.8em;">Interested</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-robot fa-3x mb-3"></i>
+                        <h5 class="display-5" style="font-size: 1.3rem;"><b>Articial Intelligence (AI):</b></h5>
 
-                <h3>Informations System</h3>
-                <a href="#My_Rusme" class="main-btn">View my Resume</a>
-
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/fadilfbenabdi"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.twitter.com/fadilf00100"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/benabdif"><i class="fab fa-github-square"></i></a>
-                    <a href="https://medium.com/@fadilf00100"><i class="fab fa-medium"></i></a>
-                   
-
-           
-
-                </div> 
+                        <p class="card-text">As a passionate advocate for technological advancements, I am particularly fascinated by the realm of Artificial Intelligence. My academic journey and hands-on experience have equipped me with the knowledge and skills necessary to explore and implement AI solutions. I am enthusiastic about harnessing the power of AI to automate processes, uncover hidden patterns, and enhance overall business efficiency.</p>
+                        <div class="text-lg-end">
+                            <a href="#" class="toggle-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                        <h5 class="display-5" style="font-size: 1.3rem;"><b>Web Technologies:</b></h5>
 
-    </section>
+                        <p class="card-text">With a keen interest in the dynamic landscape of the web, I am well-versed in the latest web technologies and trends. My proficiency extends to web development, ensuring that I stay at the forefront of innovations in this ever-evolving domain. I am excited about the intersection of technology and user experience on the web, and I am committed to contributing to and shaping the digital landscape through my skills in Information Systems and Management.</p>
+                        <div class="text-lg-end">
+                            <a href="#" class="toggle-button">Learn More</a>
+                        </div>
 
-    <!--My Rusme-->
-    <section class="RUS" id="My_Rusme">
-        <h1 class="mytitle">My Resume</h1>
-        <div class="in_fadhel">
+                        <!-- <a href="#" class="btn btn-primary" style="background-color: #e2ff04; border-color: #7fffd4; color: black;">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-chart-bar fa-3x mb-3"></i>
+                        <h5 class="display-5" style="font-size: 1.3rem;"><b>Data Analysis:</b></h5>
 
-            <div class="c">
-                <ul class="type" style="list-style-type:circle;">
-                    <h3>Educations:</h3><hr>
-                
-                    <section class="Oregon">
-                        <p>Oreogn State University</p>
-                        <p>winter - 2021</p>
-                    </section>
-
-                    <section class="Major">
-                        <p>Bachelor of Science Information System and Management.</p>
-                        <p>GPA 3.51</p>
-                    </section>
-                    <h4>Cum laude</h4>
-                
-                    <br>
-                    <h3>Skills:</h3><hr>
-
-                    <section class="ski_1">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Python - Django, Java, C #, JavaScript, Tableau, RapidMiner, GitHub, Git, UNIX, LINUS, NoSQL, SQL Server, 
-                            mongo DB, Cassandra, HTML/CSS, Microsoft Azure, Amazon Web Services</p>
-                    </section>
-
-                    <section class="ski_2">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>X code iOS, Web design "WordPress", Visual Studio, professional, Splunk Database, iMovie, Machine & Deep Learning.</p>
-                    </section>
-
-                    <section class="ski_3">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Excel, PowerPoint, Visio, iMovie, Microsoft database Access, Fluent in Arabic and Englis.</p>
-                    </section>
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Fluent in Arabic and English.</p>
-                    </section>
-                    <br><br>
-
-
-                    <!--My work Experince-->
-                    <h3>Work Experince</h3><hr>
-                    <section class="Tow">
-                    <!--One-->
-                        <p><b>Tow. Five:</b> Web-Data Science & Analysis</b>
-                        <p> Mar 2021 – Dec 2021</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Head of Operation - general supervisor building a website "Tow Point Five", teams consisting of five software developers</p>
-                    </section>
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Design a digital user interface, using a web framework, applications side code processes like flask Django.</p>
-                    </section>
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Design a database predictive modeling to support business applications. Ensuring system scalability, security, performance, and reliability.</p>
-                    </section>
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Evaluate code, ensure that it is valid, properly structured, meets industry standards, and is compatible with browsers, devices, and operating systems.</p>
-                    </section>
-                    
-                    <br><br>
-                    <!--One-->
-
-                    <section class="Tow">
-                        <p><b>Oregon State Univrsity - inter</b> IS Data Science Analysis & Reporting</b>
-                        <p> Jun 2020 – Sep 2020</p> 
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Developed instructional materials BA 371 class “Business Data Management” under the supervision of a specialist professor.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Worked on incorporating current technology into instructions to provide guidelines to educators for developing curriculum and conducting courses.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Formulate and apply mathematical modeling (NoSQL, Cassandra, Mongo DB) that assists a supervisor with decision-making about the fit database used in the curriculum</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Developed a program that is capable to store data.  Retrieving web server and logging the information by using python Language and MongoDB.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Re-designed the old class assignments related to the database using python (NoSQL, Cassandra, Mongo DB).</p>
-                    </section>
-
-
-
-                    <br><br>
-
-
-                    <!--One-->
-                    <section class="Tow">
-                        <p><b>Daimler North America - inter</b> IT Cyber Security, Automation systems developer</b>
-                        <p> Jun 2019 – Dec 2019</p> 
+                        <p class="card-text">I have a profound interest in Data Analysis, driven by my academic background and professional experience. I possess a strong foundation in statistical methods, data visualization, and pattern recognition. Leveraging my expertise in Information Systems, I am adept at extracting valuable insights from complex datasets. My commitment to precision and detail allows me to transform raw data into actionable intelligence, contributing to informed decision-making processes.</p>
                         
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Develop and oversee the implementation of information security procedures and policies.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Worked with the Cybersecurity team as a software developer. Design and implement appropriate security controls to identify vulnerabilities and protect digital files and electronics.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Project designed and developed an automation program that identifies suspicious tractions users' names and passwords for employees using python and C#.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Working on the model project design constructing large relational databases and data warehouse systems, Entity-Relationship Diagrams using Microsoft Visio.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Completed Splunk database skills certificate fundamentals One and Two.</p>
-                    </section>
-
+                        
+                        <div class="text-lg-end">
+                            <a href="#" class="toggle-button">Learn More</a>
+                        </div>
                     
-                    <br><br>
-
-                    <!-- new section of Volunteer-->
-                    <h3>Volunteer Experices</h3><hr>
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Google Student Developer Club at the University of Oregon. Create a project ML using Google platform.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Organizer – organized a celebration for an orphanage sponsored by Aramco Oil Company.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Creative – manage a team project to build an application Mobile.</p>
-                    </section>
-
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Critical Analysis – Evaluated the performance of construction projects upon completion to avoid pitfalls in future projects.</p>
-                    </section>
-                    <br><br>
-
-                    <!--Awards I got them-->
-
-                    <h3>Awards</h3><hr>
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Honors graduate – Information System, Oregon State University.</p>
-                    </section>
-
-                    
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Won 6th place (150 participants) in SABIC Entrepreneurship award boot camp, September 2019, Huston, TX, USA.</p>
-                    </section>
-
-                    
-                    <section class="ski_4">
-                        <p>-&nbsp;&nbsp; </p>
-                        <p>Got selected to be part of the MECOP program. Only 10 % of the class get selected to prepare and intern students' to involved in the worker’s market. MECOP is a unique alliance driven collaboratively by Oregon’s Engineering Universities.</p>
-                    </section>                               
-                  </ul>
-            </div>
-        </div> 
-    </section>
-<!--Here -->
-    <h2 class="title">Time line</h2>
-
-    <section class="card_1">
-        <h3>Time line in USA</h3>
-        <section class="timeline">
-            <div class="timeline-line">
-                <span class="timeline-innerline"></span>
-            </div>
-
-            <ul class="g">
-                <li>
-                    <span class="timeline-point"></span>
-                    <span class="date">2016</span>
-                    <p>Start OSU Educations</p>
-                </li>
-                
-                <li>
-                    <span class="timeline-point"></span>
-                    <span class="date">2018</span>
-                    <p>MECOP selected program </p>
-                </li>
-                <li>
-                    <span class="timeline-point"></span>
-                    <span class="date">2019</span>
-                    <p>Daimler Internship</p>
-                </li>
-                <li>
-                    <span class="timeline-point"></span>
-                    <span class="date">2020</span>
-                    <p>Oregon State Univerisy Internship</p>
-                </li>
-                <li>
-                    <span class="timeline-point"></span>
-                    <span class="date">2021</span>
-                    <p>Graduate from OSU</p>
-                </li>
-                <li>
-                    <span class="timeline-point"></span>
-                    <span class="date">2022</span>
-                    <p>Tow. Five Web project <br>
-                    
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- to here-->
-
-
-    <h2 class="title">My Skills</h2>
-      
-    <!--This Skills par-->
-    <section class="content">
-        <div class="card">     
-            <p>Python</p>
-            <div class="w3-light-grey">
-                <div id="myBar" class="w3-container w3-green w3-center" style="width:2%">0%</div>
-            </div>
-            <br>
-            <p>Web Devoloper</p>
-            <div class="w3-light-grey">
-                <div id="myBar1" class="w3-container w3-green w3-center" style="width:2%">0%</div>
-            </div>
-            <br>
-            <p>SQL</p>
-            <div class="w3-light-grey">
-                <div id="myBar2" class="w3-container w3-green w3-center" style="width:2%">0%</div>
-            </div>
-            <br>
-            <p>ML & AI</p>
-            <div class="w3-light-grey">
-                <div id="myBar3" class="w3-container w3-green w3-center" style="width:2%">0%</div>
-            </div>
-            <br>
-            <p>Data Scinse</p>
-            <div class="w3-light-grey">
-                <div id="myBar4" class="w3-container w3-green w3-center" style="width:2%">0%</div>
-            </div>
-            <br>
-            <br>
-
-            <button class="w3-button w3-green" onclick="move(), move1(), move2(), move3(), move4()">MySkills</button> 
-
-            
-
-        </div> 
-    </section>
-    
-
-
-
-
-    <section class="cards" id="services">
-        <h2 class="title">My Experices</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <img class="myi"src="images/fff.png" alt="myeye">
-                </div>
-                <div class="info">
-                    <h3>Artificial Intelligence</h3>
-                    <p>Gather, analyze, and evaluate information from a variety of sources, databases, to application (AI)on it.</p>
-
-
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <img class="myi" src="images/data-science.png" alt="myeye">
-
-                </div>
-                <div class="info">
-                    <h3>Data Science</h3>
-                    <p>Manipulating data by using some of python packages libraries like NumPy, pandas, Matplotlib, and Others.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"> 
-                    <!--<i class="fas fa-graduation-cap"></i>-->
-                    <img class="myi" src="images/web-development.png" alt="myeye">
-
-                </div>
-                <div class="info">
-                    <h3>Web Devoloper</h3>
-                    <p>Develop and implement websites, web applications, application databases, and interactive web interfaces.</p>
+                        <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-     <!--   
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work1.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work2.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work3.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work4.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work5.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Dev Books</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/work6.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Script Writing & Video Production</p>
-                    <strong class="project-title">
-                        <span>Internet</span>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    
--->
-    <!--her ethe code I have to but -->
-    <section class="cards contact" id="Conect">
-        <h2 class="title">Let's work together</h2>
+</div>
 
 
-        <div class="content">
+    <div class="container-fluid" style="background-color: aquamarine; padding: 50px 0;">
+        <div class="container">
+            <h2 class="display-4 text-center" style="font-size: 2.8em;">My Experiences </h2>
 
-            <div class="cards">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+01 541 602 0519</p>
-                </div>
+            <!-- <h1 class="display-4 text-center">Fadhel Ben Abdi</h1>
+            <p class="lead text-center">Information Systems Professional</p> -->
+
+            <!-- Your Interested Sections (Data Analysis, AI, Web Technologies) -->
+
+            <!-- <h2 class="display-4" style="font-size: 2em;"></h2> -->
+            <h3 class="display-6 py-3" style="font-size: 2em;">Professional Experience</h3>
+            <!-- Tayseer Finance -->
+            <div class="experience">
+                <h5 class="display-5" style="font-size: 1.3rem;"><b>Tayseer Finance (Aug 2023 - Present)</b></h5>
+
+                <ul>
+                    <li>Conducted thorough analysis of business processes, capturing user requirements for system improvements and operational streamlining.</li>
+                    <li>Implemented CRM strategies and collaborated with cross-functional teams, resulting in a 20% increase in operational efficiency.</li>
+                    <li>Conducted feasibility studies and impact analyses for proposed system enhancements.</li>
+                    <li>Developed web applications using Python Django, providing efficient solutions and ongoing support for end-users.</li>
+                    <li>Designed and maintained Oracle database schemas, ensuring data integrity, and used SQL for complex queries.</li>
+                </ul>
             </div>
-            <div class="cards">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>fadilf00100@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <p class="footer-title">fadilf00100 @ <span>gmil.com</span></p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            
-        </div>
-    </footer>
-    
-    <script>
-        function move() {
-          var elem = document.getElementById("myBar");   
-          var width = 20;
-          var id = setInterval(frame, 50); 
-          function frame() {
-            if (width >= 93) {   /*This number for the completed*/
-              clearInterval(id);
-            } else {
-              width++; 
-              elem.style.width = width + '%'; 
-              elem.innerHTML = width * 1  + '% ->';
-            }
-          }
-        }
-        </script>
-    
+            <a href="index2.html" class="toggle-button">Read more...</a>
+
+
         
-        <script>
-            function move1() {
-              var elem = document.getElementById("myBar1");   
-              var width = 20;
-              var id = setInterval(frame, 90); 
-              function frame() {
-                if (width >= 90) {   /*This number for the completed*/
-                  clearInterval(id);
-                } else {
-                  width++; 
-                  elem.style.width = width + '%'; 
-                  elem.innerHTML = width * 1  + '% ->';
-                }
-              }
-            }
-        </script>
-    
-        <script>
-            function move2() {
-              var elem = document.getElementById("myBar2");   
-              var width = 20;
-              var id = setInterval(frame, 60); 
-              function frame() {
-                if (width >= 88) {   /*This number for the completed*/
-                  clearInterval(id);
-                } else {
-                  width++; 
-                  elem.style.width = width + '%'; 
-                  elem.innerHTML = width * 1  + '% ->';
-                }
-              }
-            }
-        </script>
-           <script>
-            function move3() {
-              var elem = document.getElementById("myBar3");   
-              var width = 20;
-              var id = setInterval(frame, 75); 
-              function frame() {
-                if (width >= 75) {   /*This number for the completed*/
-                  clearInterval(id);
-                } else {
-                  width++; 
-                  elem.style.width = width + '%'; 
-                  elem.innerHTML = width * 1  + '% ->';
-                }
-              }
-            }
-            </script>
-           <script>
-            function move4() {
-              var elem = document.getElementById("myBar4");   
-              var width = 20;
-              var id = setInterval(frame, 88); 
-              function frame() {
-                if (width >= 88) {   /*This number for the completed*/
-                  clearInterval(id);
-                } else {
-                  width++; 
-                  elem.style.width = width + '%'; 
-                  elem.innerHTML = width * 1  + '% ->';
-                }
-              }
-            }
-            </script>
+        </div>
 
-            
-<script>
-    const line = document.querySelector(".timeline-innerline");
-
-let i = 0;
-let i2 = 1;
-let target1 = document.querySelector(".timeline ul");
-let target2 = document.querySelectorAll(".timeline ul li");
-
-const timeline_events = document.querySelectorAll("ul li");
-
-function showTime(e) {
-  e.setAttribute("done", "true");
-  e.querySelector(".timeline-point").style.background = "blue";
-  e.querySelector(".date").style.opacity = "100%";
-  e.querySelector("p").style.opacity = "100%";
-  e.querySelector("p").style.transform = "translateY(0px)";
-}
-
-function hideTime(e) {
-  e.removeAttribute("done");
-  e.querySelector(".timeline-point").style.background = "rgb(228, 228, 228)";
-  e.querySelector(".date").style.opacity = "0%";
-  e.querySelector("p").style.opacity = "0%";
-  e.querySelector("p").style.transform = "translateY(-10px)";
-}
-
-function slowLoop() {
-  setTimeout(function () {
-    showTime(timeline_events[i]);
-    timelineProgress(i + 1);
-    i++;
-    if (i < timeline_events.length) {
-      slowLoop();
-    }
-  }, 800);
-}
-
-
-function timelineProgress(value) {
-  let progress = `${(value / timeline_events.length) * 100}%`;
-  if (window.matchMedia("(min-width: 728px)").matches) {
-    line.style.width = progress;
-    line.style.height = "4px";
-  } else {
-    line.style.height = progress;
-    line.style.width = "4px";
-  }
-}
-
-let observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.intersectionRatio > 0.9) {
-        if (window.matchMedia("(min-width: 728px)").matches) {
-          slowLoop();
-        } else {
-          showTime(entry.target);
-          timelineProgress(i2);
-          i2++;
-        }
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 1, rootMargin: "0px 0px -50px 0px" }
-);
-
-if (window.matchMedia("(min-width: 728px)").matches) {
-  observer.observe(target1);
-} else {
-  target2.forEach((t) => {
-    observer.observe(t);
-  });
-}
-
-
-timeline_events.forEach((li, index) => {
-  li.addEventListener("click", () => {
-    if (li.getAttribute("done")) {
-      timelineProgress(index);
-
-      // hide all timeline events from last upto the point clicked
-      timeline_events.forEach((ev, idx) => {
-        if (idx >= index) {
-          hideTime(ev);
-        }
-      });
-    } else {
-      timelineProgress(index + 1);
-      // show all timeline events from first upto the point clicked
-      timeline_events.forEach((ev, idx) => {
-        if (idx <= index) {
-          showTime(ev);
-        }
-      });
-    }
-  });
-});
-
-var doit;
-window.addEventListener("resize", () => {
-  clearTimeout(doit);
-  doit = setTimeout(resizeEnd, 1200);
-});
-
-function resizeEnd() {
-  i = 0;
-  slowLoop();
-}
-
-
-</script>
+    </div>
+    <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <h2 class="display-4 text-center mb-4" style="font-size: 2.8em;">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label class="py-2" for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" style="height: 50px; width: 100%;" title="Sorry not active Yet">
+                    </div>
+                    <div class="form-group">
+                        <label class="py-2 for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" style="height: 50px; width: 100%;" title="Sorry not active Yet">
+                    </div>
+                    <div class="form-group">
+                        <label class="py-2 for="message">Your Message</label>
+                        <textarea class="form-control" id="message" rows="6" placeholder="Enter your message" title="Sorry not active Yet"></textarea>
+                    </div>
+                    <!-- <div class="py-3" style="height: inherit;">
+                        <a href="#" class="btn btn-primary" style="display: block; height: 50px; width: 100%;" title="Sorry not active Yet" onclick="showSuccessMessage(); return false;">Submit</a>
+                    </div> -->
+                    <div class="py-3 button-container text-center">
+                        <a href="#" class="btn btn-primary custom-button" style="width: 100%; background-color: #2980b9;" title="Sorry not active Yet" onclick="showSuccessMessage(); return false;">Submit</a>
+                    </div>
+                    <!-- <div class="py-3" style="height: inherit;">
+                        <button type="#" class="btn btn-primary" style="height: 50px; width: 100%;" onclick="showSuccessMessage()">Submit</button>
+                      </div> -->
+                </form>
+            </div>
+        </div>
         
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    </div>
+    </div>
 
+<!-- contacting me -->
+    <div class="container-fluid" style="background-color: aquamarine; padding: 50px 0;">
+        <div class="container">
+            <div class="row mt-5 text-center"><hr>
+                <div class="col-md-3">
+                    <i class="fas fa-envelope fa-1x mb-3"></i>
+                    <p>Email: fadhel5020@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-phone fa-1x mb-3"></i>
+                    <p>Phone: +966 53 110 2771</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-twitter fa-1x mb-3"></i>
+                    <!-- <p>Twitter: @your_twitter: <a href="https://twitter.com/fadilf00100/status/914178184190369792" target=""></a> </p> -->
+                    <p>X : <a href="https://twitter.com/fadilf00100/status/914178184190369792" target="Fadhel Ben Abdi">Fadhel Ben Abdi</a></p>
+
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-linkedin fa-1x mb-3"></i>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/fadilfbenabdi" target="Fadhel Ben Abdi">benabdif</a></p>
+                </div>
+            </div>
+        <div>
+    </div>
+    
 </body>
-</html>
+
+
     
+<!-- <script>src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"; integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"; crossorigin="anonymous"</script> -->
+   
+ <!-- Bootstrap JS scripts -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"; integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"; crossorigin="anonymous"</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+
+  
+
+         $(document).ready(function () {
+             $(".toggle-button").on("click", function () {
+                 var textContainer = $(this).prev(".expandable-text");
+                 textContainer.toggleClass("expanded");
+                 $(this).text(textContainer.hasClass("expanded") ? "Read less" : "Read more...");
+             });
+         });
+    
+    
+    
+    
+       
+     </script>
+    
+
+</html>
